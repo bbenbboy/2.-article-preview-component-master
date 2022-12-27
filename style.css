@@ -1,0 +1,196 @@
+:root {
+  --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+  --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+  --Grayish-Blue: hsl(212, 23%, 69%);
+  --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+* {
+  /* border: 1px solid red; */
+  font-family: "Manrope", sans-serif;
+}
+body {
+  background-color: var(--Light-Grayish-Blue);
+}
+.grid-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Desktop Size */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.5fr 0.7fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "grid-item1 grid-item2";
+  border-radius: 20px;
+  background-color: white;
+  width: 60%;
+}
+.grid-item1 {
+  grid-area: grid-item1;
+}
+.grid-item2 {
+  grid-area: grid-item2;
+}
+
+/* Desktop Size */
+@media only screen and (min-width: 1025px) {
+  .image {
+    border-radius: 20px 0 0 20px;
+  }
+  .share {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+/* Mobile Size */
+@media (max-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "grid-item1"
+      "grid-item2";
+    border-radius: 30px;
+    width: 400px;
+    margin: auto;
+  }
+  .grid-item1 {
+    grid-area: grid-item1;
+  }
+  .grid-item2 {
+    grid-area: grid-item2;
+  }
+  .image {
+    border-radius: 20px 20px 0 0;
+  }
+  .share {
+    display: flex;
+    justify-content: flex-end;
+  } /* Mobile Size */
+  .iconsBox-mobile {
+    visibility: visible;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px 20px;
+    position: absolute;
+    border-radius: 0px 0px 20px 20px;
+    top: 620px;
+    left: -1px;
+    width: 362px;
+    height: 100px;
+  }
+
+  .iconsBox-mobile ion-icon {
+    color: white;
+    margin: 10px 20px;
+  }
+}
+
+/* Item1 */
+.image {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+/* Item2 */
+.headColor {
+  color: var(--Very-Dark-Grayish-Blue);
+}
+.textColor {
+  color: var(--Desaturated-Dark-Blue);
+}
+.firstPara {
+  line-height: 1.7;
+}
+secondPara {
+  margin-top: 0px;
+}
+.description {
+  margin: 0 30px;
+}
+
+/* User and share */
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+.nameDescription {
+  margin: 20px;
+  flex: 1;
+}
+.nameDescription h4 {
+  margin-bottom: 5px;
+}
+.nameDescription p {
+  margin-top: 5px;
+}
+
+.round-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--Grayish-Blue);
+  color: white;
+  border: none;
+  z-index: 1;
+}
+
+/* Share Icons */
+/* Desktop Size */
+.iconsBox {
+  visibility: hidden;
+  background-color: var(--Very-Dark-Grayish-Blue);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  position: absolute;
+  border-radius: 10px;
+  top: 195px;
+  left: 660px;
+  width: 250px;
+}
+.iconsBox::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--Very-Dark-Grayish-Blue);
+  position: absolute;
+  bottom: -5px;
+  left: 140px;
+}
+.iconsBox ion-icon {
+  color: white;
+  margin: 10px 10px;
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+.hidden {
+  visibility: none;
+  opacity: 0;
+}
+footer {
+  margin-top: 600px;
+}
