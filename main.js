@@ -19,4 +19,4 @@ const hidButton = function (e) {
 };
 
 button.addEventListener("click", showButton);
-button.addEventListener("mouseover", hidButton);
+// button.addEventListener("mouseover", hidButton);

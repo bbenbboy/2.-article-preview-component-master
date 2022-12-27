@@ -166,7 +166,9 @@ secondPara {
   top: 195px;
   left: 660px;
   width: 250px;
+  animation: iconsBox 1s ease 0s 1 normal forwards;
 }
+
 .iconsBox::before {
   content: "";
   width: 0;
@@ -192,5 +194,15 @@ secondPara {
   opacity: 0;
 }
 footer {
-  margin-top: 600px;
+  position: fixed;
+}
+
+@keyframes iconsBox {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
