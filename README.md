@@ -23,8 +23,8 @@ Still stuck with DOM on mobile screen couldn't activate the button share for mob
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/bbenbboy/article-preview-component-master.git)
+- Live Site URL: [Add live site URL here](https://article-preview-component-master-pi.vercel.app/)
 
 ## My process
 
